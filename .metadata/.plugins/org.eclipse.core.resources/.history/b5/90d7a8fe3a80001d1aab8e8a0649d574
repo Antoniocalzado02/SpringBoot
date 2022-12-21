@@ -1,0 +1,18 @@
+package com.jacaranda.student.servicies;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.jacaranda.student.model.StudentDb;
+import com.jacaranda.student.repositorie.StudentRepositorie;
+
+public class StudentService {
+	
+	@Autowired
+	StudentRepositorie repositorio;
+	
+	
+	public StudentDb getStudent(long id) {
+		return repositorio.getById(id);
+	}
+
+}

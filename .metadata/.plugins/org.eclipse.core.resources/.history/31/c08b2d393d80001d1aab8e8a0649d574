@@ -1,0 +1,40 @@
+package com.jacaranda.student.servicies;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.jacaranda.student.model.StudentDb;
+import com.jacaranda.student.repositorie.StudentRepositorie;
+
+public class StudentService {
+	
+	@Autowired
+	StudentRepositorie repositorio;
+	
+	
+	public StudentDb getStudent(long id) {
+		return repositorio.findById(id).orElse(null);
+	}
+	
+	public List<StudentDb> getStudents(){
+		return repositorio.findAll();
+	}
+	
+	public StudentDb add(StudentDb s) {
+		return repositorio.save(s);
+	}
+	
+	public void delete(StudentDb s) {
+		repositorio.delete(s);
+	}
+	
+	public StudentDb update(StudentDb s) {
+		if (getStudent(s.getId())!=null) {
+			return repositorio.save(s);
+		}else {
+			return null;
+		}
+	}
+
+}

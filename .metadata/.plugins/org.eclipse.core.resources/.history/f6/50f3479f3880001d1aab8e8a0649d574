@@ -1,0 +1,5 @@
+package com.jacaranda.student.model;
+
+public class StudentDb {
+
+}

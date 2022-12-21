@@ -1,0 +1,5 @@
+package com.jacaranda.primerSpring.security;
+
+public class WebSecurityConfig {
+
+}

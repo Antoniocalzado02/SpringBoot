@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/estudiante/Desktop/workspace-spring/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3461475215.index
+4031112128.index
+1743263908.index
+2109040856.index
+3034239635.index
+1920379619.index

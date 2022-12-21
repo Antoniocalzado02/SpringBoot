@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" action="#" th:action="@{/deleteStudent/submit}" th:object="${student}">
+	<input id="nombre" th:field="*{name}" name="nombre" type="text" hidden>	
+	<input id="apellido" th:field="*{surname}" name=""apellido"" type="text" hidden>	
+	<input id="edad" th:field="*{age}" name="edad" type="text" hidden>	
+    			
+    <button type="submit">Borrar</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+package com.jacaranda.student.controller;
+
+public class StudentController {
+
+}

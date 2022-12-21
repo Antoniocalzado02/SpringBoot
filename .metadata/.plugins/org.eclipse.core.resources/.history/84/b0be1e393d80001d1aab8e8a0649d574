@@ -1,0 +1,11 @@
+package com.jacaranda.student.repositorie;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.jacaranda.student.model.StudentDb;
+
+public interface StudentRepositorie extends JpaRepository<StudentDb, Long> {
+	
+	
+
+}
